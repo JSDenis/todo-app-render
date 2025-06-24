@@ -6,7 +6,7 @@ const db = require('./db');
 const app = express();
 app.use(express.json());
 
-db.connect()
+// db.connect()
   .then(() => console.log('Database connected'))
   .catch(err => console.error('Connection error', err.stack));
 
